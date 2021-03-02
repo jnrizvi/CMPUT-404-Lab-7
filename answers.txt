@@ -8,10 +8,26 @@ Question 2: What does REST stand for? When I say something is RESTful, what does
 Representational State Transfer. RESTful means that the design of the server is modular. If you make changes to the server, it won't break everything. 
 
 Question 3: What does CRUD stand for? For each letter in CRUD, give the associated HTTP method.
-
+Create - POST
+Read - GET
+Update - PUT
+Delete - DELETE
 
 Question 4: What do HTTP 1XX Status Codes mean? HTTP 2xx? HTTP 3xx? HTTP 4xx? HTTP 5xx?
+1xx - Information
+2xx - Success
+4xx - Error; Client's fault
+5xx - Error; Server's fault
 
 Question 5: What is an XSS attack? Provide one way a site can be vulneratble to an XSS attack.
+A cross-site scripting attack is when a website is vulnerable to having malicious code (most likely JavaScript) run by an attacker.
+XSS attacks affect the client and perhaps the owner of the website too, since the website can be altered by the JavaScript.
+An example is that an attacker injects some malicious JavaScript into a website, a user interacts with the malicious code, and the
+malicious code is used to steal the user's cookies, which can then be unethically used to impersonate the user etc.
+Learned about it from: https://www.acunetix.com/websitesecurity/cross-site-scripting/
 
 Question 6: What does CORS stand for? What situation in web application development will you need to implement CORS protection?
+Cross Origin Resource Sharing is a way for servers to permit requests from certain specified origins using HTTP headers.
+An example usage of CORS would be if your client and server are served separately. CORS would need to be enabled on the server so that
+the client can make requests to it.
+Learned about it from: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
